@@ -143,7 +143,7 @@
     <!-- Main Content -->
     <main class="pt-20 pb-16">
         <!-- Home Section -->
-        <section id="home" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" style="scroll-margin-top: 64px;">
+        <section id="home" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="text-center mb-12">
                 <h1 class="text-5xl md:text-6xl font-bold mb-2 gradient-text-title">C4 Group</h1>
                 <h2 class="text-2xl md:text-3xl font-bold mb-4">
@@ -183,6 +183,14 @@
                         <div class="text-center">
                             <div class="text-3xl font-bold text-accent">15+</div>
                             <div class="text-sm text-gray-400">Research Papers</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent">8</div>
+                            <div class="text-sm text-gray-400">Patents</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent">8</div>
+                            <div class="text-sm text-gray-400">Patents</div>
                         </div>
                         <div class="text-center">
                             <div class="text-3xl font-bold text-accent">8</div>
@@ -247,7 +255,7 @@
             </div>
 
             <!-- Publications -->
-            <div class="mb-16">
+            <div id="publications" class="mb-16">
                 <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Publications</h2>
                 <div class="space-y-6">
                     <div class="glass-effect p-6 rounded-xl hover-scale">
@@ -311,8 +319,7 @@
         </section>
 
         <!-- People Section -->
-        <section id="people" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-dark/50"
-            style="scroll-margin-top: 64px;">
+        <section id="people" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-dark/50">
             <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Our Group</h2>
 
             <div class="mb-16">
@@ -542,6 +549,21 @@
 
                 </div>
             </div>
+            <script>
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 80, // Adjust for fixed header
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            </script>
 </body>
 
 </html>
