@@ -104,12 +104,12 @@
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#home"
                             class="text-primary hover:text-accent px-3 py-2 rounded-md text-sm font-bold transition-colors duration-300">Home</a>
-                        <a href="#people"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-bold transition-colors duration-300">People</a>
                         <a href="#publications"
                             class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-bold transition-colors duration-300">Publications</a>
+                        <a href="#people"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-bold transition-colors duration-300">People</a>
                         <a href="https://whluo.github.io/assets/join_us.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-bold transition-colors duration-300">Join
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-bold transition-colors duration-300" target="_blank">Join
                             Us</a>
                     </div>
                 </div>
@@ -128,12 +128,12 @@
         <div id="mobile-menu" class="hidden md:hidden glass-effect">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#home" class="text-primary block px-3 py-2 rounded-md text-base font-bold">Home</a>
-                <a href="#people"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-bold">People</a>
                 <a href="#publications"
                     class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-bold">Publications</a>
+                <a href="#people"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-bold">People</a>
                 <a href="https://whluo.github.io/assets/join_us.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-bold">Join Us</a>
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-bold" target="_blank">Join Us</a>
             </div>
         </div>
     </nav>
@@ -141,7 +141,7 @@
     <!-- Main Content -->
     <main class="pt-20 pb-16">
         <!-- Home Section -->
-        <section id="home" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <section id="home" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" style="scroll-margin-top: 64px;">
             <div class="text-center mb-12">
                 <h1 class="text-5xl md:text-6xl font-bold mb-2 gradient-text-title">C4 Group</h1>
                 <h2 class="text-2xl md:text-3xl font-bold mb-4">
@@ -226,7 +226,7 @@
             <!-- News Section -->
             <div class="mb-16">
                 <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Latest News</h2>
-                <div class="glass-effect p-6 rounded-xl">
+                <div class="glass-effect p-6 rounded-xl hover-scale">
                     <div class="space-y-4">
                         <div class="flex items-start">
                             <div class="text-gray-400 text-sm w-24 flex-shrink-0">2025 June</div>
@@ -244,40 +244,43 @@
                 </div>
             </div>
 
-            <!-- Recent Achievements -->
+            <!-- Publications -->
             <div class="mb-16">
-                <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Recent Achievements</h2>
-                <div class="grid md:grid-cols-3 gap-6">
+                <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Publications</h2>
+                <div class="space-y-6">
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <div class="text-5xl text-primary mb-4">
-                            <i class="fas fa-trophy"></i>
+                            <i class="fas fa-file-alt"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Best Paper Award</h3>
-                        <p class="text-gray-300 text-sm">Received at IEEE Quantum Week 2023 for our work on "Scalable
-                            Quantum Circuit Synthesis"</p>
+                        <h3 class="text-xl font-semibold mb-2">Paper Title 1</h3>
+                        <p class="text-gray-300 text-sm">Authors, Conference/Journal, Year</p>
                     </div>
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <div class="text-5xl text-primary mb-4">
-                            <i class="fas fa-flask"></i>
+                            <i class="fas fa-file-alt"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">New Material Synthesis</h3>
-                        <p class="text-gray-300 text-sm">Developed a novel 2D material with record-breaking electron
-                            mobility at room temperature</p>
+                        <h3 class="text-xl font-semibold mb-2">Paper Title 2</h3>
+                        <p class="text-gray-300 text-sm">Authors, Conference/Journal, Year</p>
                     </div>
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <div class="text-5xl text-primary mb-4">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-file-alt"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Algorithm Breakthrough</h3>
-                        <p class="text-gray-300 text-sm">Our new quantum algorithm shows 100x speedup for certain
-                            optimization problems</p>
+                        <h3 class="text-xl font-semibold mb-2">Paper Title 3</h3>
+                        <p class="text-gray-300 text-sm">Authors, Conference/Journal, Year</p>
                     </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="#"
+                        class="inline-flex items-center px-6 py-3 border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-300">
+                        View Full Publications <i class="fas fa-book ml-2"></i>
+                    </a>
                 </div>
             </div>
 
             <!-- Photo Gallery Placeholder -->
             <div class="mb-16">
-                <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Lab Gallery</h2>
+                <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Group Activities</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="rounded-xl overflow-hidden h-40 hover:scale-105 transition-transform duration-300">
                         <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
@@ -299,47 +302,47 @@
                 <div class="text-center mt-8">
                     <a href="#"
                         class="inline-flex items-center px-6 py-3 border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-300">
-                        View Full Gallery <i class="fas fa-images ml-2"></i>
+                        View More Activities <i class="fas fa-images ml-2"></i>
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- People Section -->
-        <section id="people" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-dark/50">
-            <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Our Team</h2>
+        <section id="people" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-dark/50" style="scroll-margin-top: 64px;">
+            <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Our Group</h2>
 
             <div class="mb-16">
-                <h3 class="text-2xl font-semibold mb-6 text-primary border-b border-gray-700 pb-2">Team Leader</h3>
+                <h3 class="text-2xl font-semibold mb-6 text-primary border-b border-gray-700 pb-2 px-4">Team Leader</h3>
                 <div class="flex justify-center">
-                    <div class="glass-effect p-6 rounded-xl hover-scale w-full">
+                    <div class="glass-effect p-8 md:px-8 rounded-xl hover-scale w-full">
                         <div class="flex flex-col md:flex-row gap-6">
-                            <div class="flex flex-col items-center md:items-start md:w-1/3">
+                            <div class="flex flex-col items-center md:items-start md:w-1/4 md:pl-12">
                                 <div
                                     class="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-primary/30 bg-gray-700 flex items-center justify-center">
                                     <i class="fas fa-user fa-3x text-gray-400"></i>
                                 </div>
                                 <h4 class="text-xl font-bold">Prof. Wenhan Luo</h4>
                                 <p class="text-gray-400 text-sm mb-4">Principal Investigator</p>
-                                <div class="flex space-x-4">
-                                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
-                                        <i class="fas fa-envelope"></i>
+                                <div class="flex space-x-6">
+                                    <a href="whluo@ust.hk" class="text-gray-400 hover:text-primary transition-colors duration-300" title="Email">
+                                        <i class="fas fa-envelope fa-lg"></i>
                                     </a>
-                                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
-                                        <i class="fas fa-globe"></i>
+
+                                    <a href="https://whluo.github.io" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-300" title="Homepage">
+                                        <i class="fas fa-home fa-lg"></i>
                                     </a>
-                                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
-                                        <i class="fab fa-google-scholar"></i>
+
+                                    <a href="https://scholar.google.com.hk/citations?user=g20Q12MAAAAJ" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-300" title="Google Scholar">
+                                        <i class="fas fa-graduation-cap fa-lg"></i>
                                     </a>
+
                                 </div>
                             </div>
                             <div class="md:w-2/3">
-                                <h3 class="text-lg font-semibold mb-2 text-primary">Expertise</h3>
-                                <p class="text-gray-300 mb-4">Large Models, AIGC, Content Enhancement</p>
-                                <h3 class="text-lg font-semibold mb-2 text-primary">Bio</h3>
-                                <p class="text-gray-300">Professor Wenhan Luo specializes in artificial intelligence and
-                                    computer vision, with particular focus on large-scale models and content
-                                    generation/restoration techniques.</p>
+                                <p class="text-gray-300 mb-4">Associate Professor at HKUST, previously at Sun Yat-sen University. Former research scientist at Tencent and Amazon, developing deep learning solutions for products like WeChat, QQ, and Tencent Video.</p>
+                                <p class="text-gray-300 mb-4">Published 100+ papers in top venues (CVPR, ICML, NeurIPS, etc.). CVPR 2019 Best Paper Finalist, 2022 ACM China Rising Star Award, Top 2% Scientist worldwide (2023-2024).</p>
+                                <p class="text-gray-300">Serves as Senior Area Editor for IEEE SPL, Associate Editor for IEEE TIP, and Area Chair for NeurIPS/ICML/IJCAI.</p>
                             </div>
                         </div>
                     </div>
@@ -347,8 +350,26 @@
             </div>
 
             <div class="mb-16">
-                <h3 class="text-2xl font-semibold mb-6 text-primary border-b border-gray-700 pb-2">Research Postgraduate
-                    Students</h3>
+                <h3 class="text-2xl font-semibold mb-6 text-primary border-b border-gray-700 pb-2">Postdoctoral Researchers</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="glass-effect p-4 rounded-xl hover-scale">
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-primary/30">
+                                <div class="w-full h-full bg-gray-700 flex items-center justify-center">
+                                    <i class="fas fa-user text-gray-400"></i>
+                                </div>
+                            </div>
+                            <h4 class="font-semibold text-center">XXXX</h4>
+                            <p class="text-gray-400 text-xs text-center">Video Generation</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-6 text-primary border-b border-gray-700 pb-2">Research Postgraduate Students</h3>
                 <div class="grid md:grid-cols-4 gap-6">
                     <div class="glass-effect p-4 rounded-xl hover-scale">
                         <div class="flex flex-col items-center">
@@ -358,6 +379,7 @@
                                 </div>
                             </div>
                             <h4 class="font-semibold text-center">XXXX</h4>
+                            <p class="text-gray-400 text-xs text-center">(2024 Fall - )</p>
                             <p class="text-gray-400 text-xs text-center">Video Generation</p>
                         </div>
                     </div>
@@ -370,6 +392,7 @@
                                 </div>
                             </div>
                             <h4 class="font-semibold text-center">XXXX</h4>
+                            <p class="text-gray-400 text-xs text-center">(2025 Spring - )</p>
                             <p class="text-gray-400 text-xs text-center">Video Generation</p>
                         </div>
                     </div>
@@ -382,6 +405,7 @@
                                 </div>
                             </div>
                             <h4 class="font-semibold text-center">XXXX</h4>
+                            <p class="text-gray-400 text-xs text-center">(2025 Fall - )</p>
                             <p class="text-gray-400 text-xs text-center">Video Generation</p>
                         </div>
                     </div>
@@ -394,6 +418,33 @@
                                 </div>
                             </div>
                             <h4 class="font-semibold text-center">XXXX</h4>
+                            <p class="text-gray-400 text-xs text-center">(2025 Fall - )</p>
+                            <p class="text-gray-400 text-xs text-center">Video Generation</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect p-4 rounded-xl hover-scale">
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-primary/30">
+                                <div class="w-full h-full bg-gray-700 flex items-center justify-center">
+                                    <i class="fas fa-user text-gray-400"></i>
+                                </div>
+                            </div>
+                            <h4 class="font-semibold text-center">XXXX</h4>
+                            <p class="text-gray-400 text-xs text-center">(2025 Fall - )</p>
+                            <p class="text-gray-400 text-xs text-center">Video Generation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-effect p-4 rounded-xl hover-scale">
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-primary/30">
+                                <div class="w-full h-full bg-gray-700 flex items-center justify-center">
+                                    <i class="fas fa-user text-gray-400"></i>
+                                </div>
+                            </div>
+                            <h4 class="font-semibold text-center">XXXX</h4>
+                            <p class="text-gray-400 text-xs text-center">(2025 Fall - )</p>
                             <p class="text-gray-400 text-xs text-center">Video Generation</p>
                         </div>
                     </div>
@@ -428,29 +479,8 @@
                         </div>
                     </div>
 
-                    <div class="glass-effect p-4 rounded-xl hover-scale">
-                        <div class="flex flex-col items-center">
-                            <div class="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-primary/30">
-                                <div class="w-full h-full bg-gray-700 flex items-center justify-center">
-                                    <i class="fas fa-user text-gray-400"></i>
-                                </div>
-                            </div>
-                            <h4 class="font-semibold text-center">XXXX</h4>
-                            <p class="text-gray-400 text-xs text-center">Video Generation</p>
-                        </div>
-                    </div>
 
-                    <div class="glass-effect p-4 rounded-xl hover-scale">
-                        <div class="flex flex-col items-center">
-                            <div class="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-primary/30">
-                                <div class="w-full h-full bg-gray-700 flex items-center justify-center">
-                                    <i class="fas fa-user text-gray-400"></i>
-                                </div>
-                            </div>
-                            <h4 class="font-semibold text-center">XXXX</h4>
-                            <p class="text-gray-400 text-xs text-center">Video Generation</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -482,29 +512,6 @@
                         </div>
                     </div>
 
-                    <div class="glass-effect p-4 rounded-xl hover-scale">
-                        <div class="flex flex-col items-center">
-                            <div class="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-primary/30">
-                                <div class="w-full h-full bg-gray-700 flex items-center justify-center">
-                                    <i class="fas fa-user text-gray-400"></i>
-                                </div>
-                            </div>
-                            <h4 class="font-semibold text-center">XXXX</h4>
-                            <p class="text-gray-400 text-xs text-center">Video Generation</p>
-                        </div>
-                    </div>
-
-                    <div class="glass-effect p-4 rounded-xl hover-scale">
-                        <div class="flex flex-col items-center">
-                            <div class="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-primary/30">
-                                <div class="w-full h-full bg-gray-700 flex items-center justify-center">
-                                    <i class="fas fa-user text-gray-400"></i>
-                                </div>
-                            </div>
-                            <h4 class="font-semibold text-center">XXXX</h4>
-                            <p class="text-gray-400 text-xs text-center">Video Generation</p>
-                        </div>
-                    </div>
                 </div>
             </div>
 </body>
