@@ -13,10 +13,11 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#3b82f6',
-                        dark: '#0f172a',
-                        darker: '#020617',
-                        accent: '#7c3aed',
+                        primary: '#000000',
+                        accent: '#6366f1',
+                        blue: '#3b82f6',
+                        logo: '#0033cc',
+
                     },
                     animation: {
                         'pulse-slow': 'pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -64,10 +65,10 @@
         }
 
         .glass-effect {
-            background: rgba(15, 23, 42, 0.7);
+            background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .hover-scale {
@@ -90,20 +91,20 @@
     </style>
 </head>
 
-<body class="bg-darker text-gray-200 min-h-screen font-sans">
+<body class="bg-white text-gray-900 min-h-screen font-sans">
     <!-- Navigation -->
-    <nav class="glass-effect fixed w-full z-50 top-0">
+    <nav class="backdrop-blur-md bg-black/70 fixed w-full z-50 top-0 border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <span class="text-xl font-bold gradient-text">C4 Group</span>
+                        <img src="assets/logos/C4G.png" alt="C4 Group Logo" class="h-8">
                     </div>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#home"
-                            class="text-primary hover:text-accent px-3 py-2 rounded-md text-sm font-bold transition-colors duration-300">Home</a>
+                            class="text-gray-300 hover:text-blue px-3 py-2 rounded-md text-sm font-bold transition-colors duration-300">Home</a>
                         <a href="#publications"
                             class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-bold transition-colors duration-300">Publications</a>
                         <a href="#people"
@@ -116,7 +117,7 @@
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                    <button id="mobile-menu-button" class="text-black hover:text-white focus:outline-none">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16"></path>
@@ -127,7 +128,7 @@
         </div>
 
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden glass-effect transition-all duration-300 ease-in-out">
+        <div id="mobile-menu" class="hidden md:hidden bg-black transition-all duration-300 ease-in-out">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#home" class="text-primary block px-3 py-2 rounded-md text-base font-bold">Home</a>
                 <a href="#publications"
@@ -148,25 +149,18 @@
         <!-- Home Section -->
         <section id="home" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="text-center mb-12">
-                <div class="flex justify-center items-center">
-                    <img src="assets/logos/C4G.png" alt="C4 Group Logo" class="h-14 md:h-16 mr-4">
-                    <h1 class="text-6xl md:text-7xl font-bold mb-2 gradient-text">C4 Group</h1>
+                <div class="flex justify-center">
+                    <img src="assets/logos/C4G_horizontal.png" alt="C4 Group Logo"
+                        class="h-auto max-h-32 md:max-h-40 w-auto max-w-full mx-auto">
                 </div>
-                <h2 class="text-2xl md:text-3xl font-bold mb-4">
-                    <span class="text-primary">C</span>reative,
-                    <span class="text-primary">C</span>ontrollable &
-                    <span class="text-primary">C</span>ognitive
-                    <span class="text-primary">C</span>omputing Group
-                </h2>
             </div>
 
             <!-- Hero Image -->
             <div class="relative rounded-xl overflow-hidden mb-12 hover-scale transition-all duration-500">
                 <img src="assets/hero_image.png" alt="Campus" class="w-full opacity-90">
-                <div class="absolute inset-0 bg-gradient-to-t from-darker/80 via-transparent to-transparent"></div>
                 <div class="absolute bottom-0 right-0 p-8 z-10 text-right">
                     <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Innovating Tomorrow's Technology</h2>
-                    <p class="text-gray-300 max-w-2xl ml-auto">Explosive Innovation in Creative, Controllable
+                    <p class="text-white max-w-2xl ml-auto">Explosive Innovation in Creative, Controllable
                         Content Generation & Cognitive Advancement</p>
                 </div>
             </div>
@@ -174,8 +168,8 @@
             <!-- Group Introduction -->
             <div class="grid md:grid-cols-2 gap-8 mb-16">
                 <div class="glass-effect p-6 rounded-xl hover-scale">
-                    <h2 class="text-2xl font-bold mb-4 text-primary">About</h2>
-                    <p class="text-gray-300 mb-4 text-justify">
+                    <h2 class="text-2xl font-bold mb-4 text-logo">About</h2>
+                    <p class="text-black mb-4 text-justify">
                         The Creative, Controllable & Cognitive Computing Group (C4G) at HKUST, founded in 2024, pioneers
                         cutting-edge research at the intersection of content generation, precise control, and cognitive
                         intelligence for visual and multimodal systems. We fuse creative AI (e.g., image/video, 3D/4D
@@ -183,36 +177,36 @@
                         advancement (e.g., multimodal reasoning, human-AI interaction) to develop explosive innovations
                         that bridge theory and real-world impact.
                     </p>
-                    <h2 class="text-2xl font-bold mb-4 text-primary">Why C4 Group</h2>
-                    <p class="text-gray-300 mb-4 text-justify">
+                    <h2 class="text-2xl font-bold mb-4 text-logo">Why C4 Group</h2>
+                    <p class="text-black mb-4 text-justify">
                         Like the explosive potential of its namesake, our group delivers high-impact
                         solutions — validated by awards, patents, and publications at top conferences/journals. <a
                             href="https://whluo.github.io/assets/join_us.html" target="_blank"
-                            class="text-primary hover:text-accent transition-colors duration-300">Join us</a> to
+                            class="text-blue hover:text-accent transition-colors duration-300">Join us</a> to
                         redefine the frontiers of intelligent content creation and multimodal computing.
                     </p>
 
                 </div>
                 <div class="glass-effect p-6 rounded-xl hover-scale">
-                    <h2 class="text-2xl font-bold mb-4 text-primary">Research Focus</h2>
+                    <h2 class="text-2xl font-bold mb-4 text-logo">Research Focus</h2>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <div class="text-primary mr-3 mt-1">
+                            <div class="text-logo mr-3 mt-1">
                                 <i class="fas fa-brain fa-lg"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold">Large Models</h3>
-                                <p class="text-gray-400 text-sm">Developing and optimizing foundation models for various
+                                <h3 class="font-semibold text-logo">Large Models</h3>
+                                <p class="text-black text-sm">Developing and optimizing foundation models for various
                                     tasks</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="text-primary mr-3 mt-1">
+                            <div class="text-logo mr-3 mt-1">
                                 <i class="fas fa-image fa-lg"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold">AIGC</h3>
-                                <p class="text-gray-400 text-sm">
+                                <h3 class="font-semibold text-logo">AIGC</h3>
+                                <p class="text-black text-sm">
                                     - Image Generation & Edit <br>
                                     - Video Generation & Edit <br>
                                     - 3D/4D Generation<br>
@@ -220,41 +214,41 @@
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="text-primary mr-3 mt-1">
+                            <div class="text-logo mr-3 mt-1">
                                 <i class="fas fa-wrench fa-lg"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold">Content Restoration</h3>
-                                <p class="text-gray-400 text-sm">Enhancing and restoring low-quality media content</p>
+                                <h3 class="font-semibold text-logo">Content Restoration</h3>
+                                <p class="text-black text-sm">Enhancing and restoring low-quality media content</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="text-primary mr-3 mt-1">
+                            <div class="text-logo mr-3 mt-1">
                                 <i class="fas fa-project-diagram fa-lg"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold">Multimodal AI</h3>
-                                <p class="text-gray-400 text-sm">
+                                <h3 class="font-semibold text-logo">Multimodal AI</h3>
+                                <p class="text-black text-sm">
                                     Advancing multimodal learning for unified understanding and generation
                                 </p>
                             </div>
                         </div>
                         <div class="flex space-x-4 mt-6">
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-accent">100+</div>
-                                <div class="text-sm text-gray-400">Top Research Papers</div>
+                                <div class="text-3xl font-bold text-logo">100+</div>
+                                <div class="text-sm text-black">Top Research Papers</div>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-accent">10+</div>
-                                <div class="text-sm text-gray-400">US Patents</div>
+                                <div class="text-3xl font-bold text-logo">10+</div>
+                                <div class="text-sm text-black">US Patents</div>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-accent">10+</div>
-                                <div class="text-sm text-gray-400">Sponsors</div>
+                                <div class="text-3xl font-bold text-logo">10+</div>
+                                <div class="text-sm text-black">Sponsors</div>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-accent">13K+</div>
-                                <div class="text-sm text-gray-400">Github Star</div>
+                                <div class="text-3xl font-bold text-logo">13K+</div>
+                                <div class="text-sm text-black">Github Star</div>
                             </div>
                         </div>
                     </div>
@@ -267,12 +261,12 @@
                 <div class="glass-effect p-6 rounded-xl hover-scale">
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <div class="text-gray-400 text-sm w-24 flex-shrink-0">2025 June</div>
-                            <div class="text-gray-300">MaterialMVP and MOERL are accepted by ICCV 2025.</div>
+                            <div class="text-black text-sm w-24 flex-shrink-0">2025 June</div>
+                            <div class="text-black">MaterialMVP and MOERL are accepted by ICCV 2025.</div>
                         </div>
                         <div class="flex items-start">
-                            <div class="text-gray-400 text-sm w-24 flex-shrink-0">2025 June</div>
-                            <div class="text-gray-300">Our group website is established.</div>
+                            <div class="text-black text-sm w-24 flex-shrink-0">2025 June</div>
+                            <div class="text-black">Our group website is established.</div>
                         </div>
                     </div>
                 </div>
@@ -284,18 +278,18 @@
                 <div class="space-y-6">
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <h3 class="text-xl font-semibold mb-2">UNIC: Unified In-Context Video Editing</h3>
-                        <p class="text-gray-300 text-sm">Zixuan Ye, Xuanhua He, Quande Liu, Qiulin Wang, Xintao Wang,
+                        <p class="text-black text-sm">Zixuan Ye, Xuanhua He, Quande Liu, Qiulin Wang, Xintao Wang,
                             Pengfei Wan, Di Zhang, Kun Gai, Qifeng Chen, Wenhan Luo</p>
-                        <p class="text-gray-300 text-sm">arXiv:2506.04216.</p>
+                        <p class="text-black text-sm">arXiv:2506.04216.</p>
                         [<a href="https://arxiv.org/abs/2506.04216" target="_blank">arXiv</a>]
                         [<a href="https://zixuan-ye.github.io/UNIC/" target="_blank">Project Page</a>]
                     </div>
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <h3 class="text-xl font-semibold mb-2">Let Them Talk: Audio-Driven Multi-Person Conversational
                             Video Generation</h3>
-                        <p class="text-gray-300 text-sm">Zhe Kong, Feng Gao, Yong Zhang, Zhuoliang Kang, Xiaoming Wei,
+                        <p class="text-black text-sm">Zhe Kong, Feng Gao, Yong Zhang, Zhuoliang Kang, Xiaoming Wei,
                             Xunliang Cai, Guanying Chen, Wenhan Luo</p>
-                        <p class="text-gray-300 text-sm">arXiv:2505.22647.</p>
+                        <p class="text-black text-sm">arXiv:2505.22647.</p>
                         [<a href="https://arxiv.org/abs/2505.22647" target="_blank">arXiv</a>]
                         [<a href="https://meigen-ai.github.io/multi-talk/" target="_blank">Project Page</a>]
                         [<a href="https://github.com/MeiGen-AI/MultiTalk/" target="_blank">Code</a>]
@@ -308,9 +302,9 @@
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <h3 class="text-xl font-semibold mb-2">MaterialMVP: Illumination-Invariant Material Generation
                             via Multi-view PBR Diffusion</h3>
-                        <p class="text-gray-300 text-sm">Zebin He, Mingxin Yang, Shuhui Yang, Yixuan Tang, Tao Wang,
+                        <p class="text-black text-sm">Zebin He, Mingxin Yang, Shuhui Yang, Yixuan Tang, Tao Wang,
                             Kaihao Zhang, Guanying Chen, Yuhong Liu, Jie Jiang, Chunchao Guo, Wenhan Luo</p>
-                        <p class="text-gray-300 text-sm">Proc. of International Conference on Computer Vision (ICCV),
+                        <p class="text-black text-sm">Proc. of International Conference on Computer Vision (ICCV),
                             Hawaii, USA, 2025.</p>
                         [<a href="https://arxiv.org/abs/2503.10289" target="_blank">arXiv</a>]
                         [<a href="https://zebinhe.github.io/MaterialMVP/" target="_blank">Project Page</a>]
@@ -321,18 +315,18 @@
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <h3 class="text-xl font-semibold mb-2">MOERL: When Mixture-of-Experts Meet Reinforcement
                             Learning for Adverse Weather Image Restoration</h3>
-                        <p class="text-gray-300 text-sm">Tao Wang, Peiwen Xia, Bo Li, Peng-Tao Jiang, Zhe Kong, Kaihao
+                        <p class="text-black text-sm">Tao Wang, Peiwen Xia, Bo Li, Peng-Tao Jiang, Zhe Kong, Kaihao
                             Zhang, Tong Lu, Wenhan Luo</p>
-                        <p class="text-gray-300 text-sm">Proc. of International Conference on Computer Vision (ICCV),
+                        <p class="text-black text-sm">Proc. of International Conference on Computer Vision (ICCV),
                             Hawaii, USA, 2025.</p>
 
                     </div>
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <h3 class="text-xl font-semibold mb-2">DAM-VSR: Disentanglement of Appearance and Motion for
                             Video Super-Resolution</h3>
-                        <p class="text-gray-300 text-sm">Zhe Kong, Le Li, Yong Zhang, Feng Gao, Shaoshu Yang, Tao Wang,
+                        <p class="text-black text-sm">Zhe Kong, Le Li, Yong Zhang, Feng Gao, Shaoshu Yang, Tao Wang,
                             Kaihao Zhang, Zhuoliang Kang, Xiaoming Wei, Guanying Chen, Wenhan Luo</p>
-                        <p class="text-gray-300 text-sm">ACM SIGGRAPH, 2025.</p>
+                        <p class="text-black text-sm">ACM SIGGRAPH, 2025.</p>
                         [<a href="" target="_blank">PDF</a>]
                         [<a href="https://kongzhecn.github.io/projects/dam-vsr/" target="_blank">Project Page</a>]
                         [<a href="https://github.com/kongzhecn/DAM-VSR" target="_blank">Code</a>]
@@ -340,9 +334,9 @@
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <h3 class="text-xl font-semibold mb-2">StyleMaster: Stylize Your Video with Artistic Generation
                             and Translation</h3>
-                        <p class="text-gray-300 text-sm">Zixuan Ye, Huijuan Huang, Xintao Wang, Pengfei Wan, Di Zhang,
+                        <p class="text-black text-sm">Zixuan Ye, Huijuan Huang, Xintao Wang, Pengfei Wan, Di Zhang,
                             Wenhan Luo</p>
-                        <p class="text-gray-300 text-sm">Proc. of IEEE Conf. on Computer Vision and Pattern Recognition
+                        <p class="text-black text-sm">Proc. of IEEE Conf. on Computer Vision and Pattern Recognition
                             (CVPR), 2025.</p>
                         [<a href="https://arxiv.org/pdf/2412.07744" target="_blank">arXiv</a>]
                         [<a href="https://github.com/KwaiVGI/StyleMaster" target="_blank">Github</a>]
@@ -354,10 +348,10 @@
                     <div class="glass-effect p-6 rounded-xl hover-scale">
                         <h3 class="text-xl font-semibold mb-2">Towards Multiple Character Image Animation Through
                             Enhancing Implicit Decoupling</h3>
-                        <p class="text-gray-300 text-sm">Jingyun Xue, Hongfa Wang, Qi Tian, Yue Ma, Andong Wang, Zhiyuan
+                        <p class="text-black text-sm">Jingyun Xue, Hongfa Wang, Qi Tian, Yue Ma, Andong Wang, Zhiyuan
                             Zhao, Shaobo Min, Wenzhe Zhao, Kaihao Zhang, Heung-Yeung Shum, Wei Liu, Mengyang Liu, Wenhan
                             Luo</p>
-                        <p class="text-gray-300 text-sm">International Conference on Learning Representations (ICLR),
+                        <p class="text-black text-sm">International Conference on Learning Representations (ICLR),
                             2025.</p>
                         [<a href="https://openreview.net/forum?id=aqlzXgXwWa" target="_blank">PDF</a>]
                         [<a href="https://multi-animation.github.io/" target="_blank">Project Page</a>]
@@ -378,7 +372,7 @@
         </section>
 
         <!-- People Section -->
-        <section id="people" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-dark/50">
+        <section id="people" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gray-50">
             <h2 class="text-3xl font-bold mb-12 text-center text-primary">Our Group</h2>
 
             <div class="mb-16">
@@ -397,7 +391,7 @@
                                 </div>
 
                                 <h4 class="text-xl font-bold">Dr. Wenhan Luo</h4>
-                                <p class="text-gray-400 text-sm mb-4">Principal Investigator</p>
+                                <p class="text-gray-700 text-sm mb-4">Principal Investigator</p>
                                 <div class="flex space-x-8">
                                     <a href="mailto:whluo@ust.hk"
                                         class="text-gray-400 hover:text-primary transition-colors duration-300"
@@ -421,17 +415,17 @@
                             </div>
                             <div class="md:w-2/3">
                                 <div class="grid grid-cols-1 gap-4">
-                                    <p class="text-gray-300 text-justify">Associate Professor at HKUST, previously at
+                                    <p class="text-black text-justify">Associate Professor at HKUST, previously at
                                         Sun Yat-sen
                                         University. Former research scientist at Tencent and Amazon, developing deep
                                         learning solutions for products like WeChat, QQ, Tencent Video, Tencent Yuanbao,
                                         Tencent Cloud, and myapp.</p>
-                                    <p class="text-gray-300 text-justify">Published 100+ papers in top venues (CVPR,
+                                    <p class="text-black text-justify">Published 100+ papers in top venues (CVPR,
                                         ICML, NeurIPS,
                                         etc.). CVPR 2019 Best Paper Finalist, 2022 ACM China Rising Star Award
                                         (Guangzhou
                                         Chapter), Top 2% Scientist worldwide (2023-2024).</p>
-                                    <p class="text-gray-300 text-justify">Serves as Senior Area Editor for IEEE SPL,
+                                    <p class="text-black text-justify">Serves as Senior Area Editor for IEEE SPL,
                                         Associate Editor for
                                         IEEE TIP, and Area Chair for NeurIPS/ICML/IJCAI/ACM-MM/BMVC.</p>
                                 </div>
@@ -452,8 +446,8 @@
                                 <img src="assets/people/tao_wang.jpg" alt="Tao Wang" class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Tao Wang</h4>
-                            <p class="text-gray-400 text-xs text-center">Low-level Vision</p>
-                            <p class="text-gray-400 text-xs text-center">PhD from Nanjing University</p>
+                            <p class="text-black text-xs text-center">Low-level Vision</p>
+                            <p class="text-black text-xs text-center">PhD from Nanjing University</p>
                         </div>
                     </a>
 
@@ -472,9 +466,9 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Zhiqiang Wang</h4>
-                            <p class="text-gray-400 text-xs text-center">(2024 Fall, from Southern University of Science
+                            <p class="text-black text-xs text-center">(2024 Fall, from Southern University of Science
                                 and Technology)</p>
-                            <p class="text-gray-400 text-xs text-center">AI Safety</p>
+                            <p class="text-black text-xs text-center">AI Safety</p>
                         </div>
                     </a>
 
@@ -485,9 +479,9 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Yatian Wang</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025 Spring, from Harbin Institute of
+                            <p class="text-black text-xs text-center">(2025 Spring, from Harbin Institute of
                                 Technology)</p>
-                            <p class="text-gray-400 text-xs text-center">Agentic AI</p>
+                            <p class="text-black text-xs text-center">Agentic AI</p>
                         </div>
                     </a>
 
@@ -499,8 +493,8 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Gongye Liu</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025 Fall, from Tsinghua University)</p>
-                            <p class="text-gray-400 text-xs text-center">Image & Video Generation</p>
+                            <p class="text-black text-xs text-center">(2025 Fall, from Tsinghua University)</p>
+                            <p class="text-black text-xs text-center">Image & Video Generation</p>
                         </div>
                     </a>
 
@@ -512,10 +506,10 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Zixuan Ye</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025 Fall, from Huazhong University of Science
+                            <p class="text-black text-xs text-center">(2025 Fall, from Huazhong University of Science
                                 and Technology)</p>
-                            <p class="text-gray-400 text-xs text-center">Video Generation & Edit</p>
-                            <p class="text-gray-400 text-xs text-center">
+                            <p class="text-black text-xs text-center">Video Generation & Edit</p>
+                            <p class="text-black text-xs text-center">
                                 <font color="138d75">HKPFS awardee</font>
                             </p>
                         </div>
@@ -529,9 +523,9 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Haoqiang Guo</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025 Fall, from Harbin Institute of
+                            <p class="text-black text-xs text-center">(2025 Fall, from Harbin Institute of
                                 Technology)</p>
-                            <p class="text-gray-400 text-xs text-center">Multimodal MoE</p>
+                            <p class="text-black text-xs text-center">Multimodal MoE</p>
                         </div>
                     </a>
 
@@ -543,8 +537,8 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Zhizhou Zhong</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025 Fall, from Fudan University)</p>
-                            <p class="text-gray-400 text-xs text-center">Digital Human</p>
+                            <p class="text-black text-xs text-center">(2025 Fall, from Fudan University)</p>
+                            <p class="text-black text-xs text-center">Digital Human</p>
                         </div>
                     </a>
                 </div>
@@ -561,8 +555,8 @@
                                 <img src="assets/people/bo_yang.png" alt="Bo Yang" class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Bo Yang</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025/06 - )</p>
-                            <p class="text-gray-400 text-xs text-center">Master student from ShanghaiTech University</p>
+                            <p class="text-black text-xs text-center">(2025/06 - )</p>
+                            <p class="text-black text-xs text-center">Master student from ShanghaiTech University</p>
                         </div>
                     </a>
 
@@ -574,10 +568,10 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Yunxin Li</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025/03 - 2025/08)</p>
-                            <p class="text-gray-400 text-xs text-center">PhD student from Harbin Institute of
+                            <p class="text-black text-xs text-center">(2025/03 - 2025/08)</p>
+                            <p class="text-black text-xs text-center">PhD student from Harbin Institute of
                                 Technology, Shenzhen</p>
-                            <p class="text-gray-400 text-xs text-center">
+                            <p class="text-black text-xs text-center">
                                 <font color="138d75">Huawei TopMinds, 华为天少</font>
                             </p>
                         </div>
@@ -591,8 +585,8 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Haoqiang Guo</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025/03 - 2025/08)</p>
-                            <p class="text-gray-400 text-xs text-center">Master student from Harbin Institute of
+                            <p class="text-black text-xs text-center">(2025/03 - 2025/08)</p>
+                            <p class="text-black text-xs text-center">Master student from Harbin Institute of
                                 Technology</p>
                         </div>
                     </a>
@@ -611,8 +605,8 @@
                                 <img src="assets/people/yida_zhi.jpg" alt="Yida Zhi" class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Yida Zhi</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025/07 - )</p>
-                            <p class="text-gray-400 text-xs text-center">Undergraduate student from University of
+                            <p class="text-black text-xs text-center">(2025/07 - )</p>
+                            <p class="text-black text-xs text-center">Undergraduate student from University of
                                 Science and Technology of China</p>
                         </div>
                     </a>
@@ -624,21 +618,21 @@
                                 <img src="assets/people/tao_zhou.jpg" alt="Tao Zhou" class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Tao Zhou</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025/01 - 2025/03)</p>
-                            <p class="text-gray-400 text-xs text-center">PhD student from Zhejiang University</p>
+                            <p class="text-black text-xs text-center">(2025/01 - 2025/03)</p>
+                            <p class="text-black text-xs text-center">PhD student from Zhejiang University</p>
                         </div>
                     </a>
 
                     <a href="#" target="_blank" class="glass-effect p-4 rounded-xl hover-scale">
                         <div class="flex flex-col items-center">
-                            <div class="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-primary/30">
-                                <div class="w-full h-full bg-gray-700 flex items-center justify-center">
-                                    <i class="fas fa-user text-gray-400"></i>
+                            <div class="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-primary/20">
+                                <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                                    <i class="fas fa-user text-white"></i>
                                 </div>
                             </div>
                             <h4 class="font-semibold text-center">Zipeng Wang</h4>
-                            <p class="text-gray-400 text-xs text-center">(2025/01 - 2025/05)</p>
-                            <p class="text-gray-400 text-xs text-center">Undergraduate student from Southeast University
+                            <p class="text-black text-xs text-center">(2025/01 - 2025/05)</p>
+                            <p class="text-black text-xs text-center">Undergraduate student from Southeast University
                                 (Chien-Shiung WU College)</p>
                         </div>
                     </a>
@@ -656,8 +650,8 @@
                                 <img src="assets/people/zhe_kong.png" alt="Zhe Kong" class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Zhe Kong</h4>
-                            <p class="text-gray-400 text-xs text-center">(2023 Fall, PhD Student)</p>
-                            <p class="text-gray-400 text-xs text-center">Video Generation</p>
+                            <p class="text-black text-xs text-center">(2023 Fall, PhD Student)</p>
+                            <p class="text-black text-xs text-center">Video Generation</p>
                         </div>
                     </a>
 
@@ -668,8 +662,8 @@
                                 <img src="assets/people/zebin_he.jpg" alt="Zebin He" class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Zebin He</h4>
-                            <p class="text-gray-400 text-xs text-center">(2023 Fall, Master Student)</p>
-                            <p class="text-gray-400 text-xs text-center">3D Texture Generation</p>
+                            <p class="text-black text-xs text-center">(2023 Fall, Master Student)</p>
+                            <p class="text-black text-xs text-center">3D Texture Generation</p>
                         </div>
                     </a>
 
@@ -680,8 +674,8 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Songlin Xiao</h4>
-                            <p class="text-gray-400 text-xs text-center">(2023 Fall, Master Student )</p>
-                            <p class="text-gray-400 text-xs text-center">Image Generation & Edit</p>
+                            <p class="text-black text-xs text-center">(2023 Fall, Master Student )</p>
+                            <p class="text-black text-xs text-center">Image Generation & Edit</p>
                         </div>
                     </a>
 
@@ -700,8 +694,8 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Jingfan Tan</h4>
-                            <p class="text-gray-400 text-xs text-center">(2022 - 2025, Master)</p>
-                            <p class="text-gray-400 text-xs text-center">Low-level Vision</p>
+                            <p class="text-black text-xs text-center">(2022 - 2025, Master)</p>
+                            <p class="text-black text-xs text-center">Low-level Vision</p>
                         </div>
                     </a>
 
@@ -712,8 +706,8 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-semibold text-center">Jingyun Xue</h4>
-                            <p class="text-gray-400 text-xs text-center">(2022 - 2025, Master)</p>
-                            <p class="text-gray-400 text-xs text-center">Video Generation</p>
+                            <p class="text-black text-xs text-center">(2022 - 2025, Master)</p>
+                            <p class="text-black text-xs text-center">Video Generation</p>
                         </div>
                     </a>
 
@@ -729,7 +723,7 @@
         <!-- Sponsors Section -->
         <section id="sponsors" class="py-12 px-4 sm:px-6 lg:px-8 bg-white">
             <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-bold mb-12 text-center text-black">Sponsors</h2>
+                <h2 class="text-3xl font-bold mb-12 text-center text-gray-900">Sponsors</h2>
                 <style>
                     .sponsor-logo-container {
                         display: flex;
@@ -804,7 +798,7 @@
         </section>
 
         <!-- Copyright Section -->
-        <section class="py-8 px-4 sm:px-6 lg:px-8 bg-darker text-white text-center">
+        <section class="py-8 px-4 sm:px-6 lg:px-8 bg-white text-black text-center">
             <p>C4 Group @ HKUST, Copyright 2025<br>
                 Clear Water Bay, Kowloon, Hong Kong</p>
         </section>
