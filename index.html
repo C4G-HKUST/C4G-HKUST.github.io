@@ -34,19 +34,19 @@
     </script>
     <style>
         .gradient-text {
-            background: linear-gradient(90deg, #3b82f6, #7c3aed);
+            background: linear-gradient(90deg, rgb(99, 202, 207));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
 
         .gradient-text-title {
-            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            background: linear-gradient(90deg, rgb(99, 202, 207), rgb(7, 24, 74), rgb(99, 202, 207));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             background-size: 200% auto;
-            animation: gradient 3s ease infinite;
+            animation: gradient 5s ease infinite;
         }
 
         @keyframes gradient {
@@ -148,8 +148,11 @@
         <!-- Home Section -->
         <section id="home" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="text-center mb-12">
-                <h1 class="text-5xl md:text-6xl font-bold mb-2 gradient-text-title">C4 Group</h1>
-                <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                <div class="flex justify-center items-center">
+                    <img src="assets/logos/C4G.png" alt="C4 Group Logo" class="h-14 md:h-16 mr-4">
+                    <h1 class="text-6xl md:text-7xl font-bold mb-2 gradient-text">C4 Group</h1>
+                </div>
+                <h2 class="text-xl md:text-2xl font-bold mb-4">
                     <span class="text-primary">C</span>reative,
                     <span class="text-primary">C</span>ontrollable &
                     <span class="text-primary">C</span>ognitive
