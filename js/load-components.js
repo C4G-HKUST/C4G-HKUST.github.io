@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load all components in sequence
     await loadComponent('nav-container', 'components/navigation.html');
     await loadComponent('home-container', 'components/home.html');
-    await loadComponent('publications-container', 'components/publications.html');
+    await loadComponent('publications-container', 'components/recent_works.html');
     await loadComponent('people-container', 'components/people.html');
     await loadComponent('sponsors-container', 'components/sponsors.html');
     await loadComponent('footer-container', 'components/footer.html');
